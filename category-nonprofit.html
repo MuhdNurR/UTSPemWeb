@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kita Bantu</title>
+
+    <!-- Logo Tab-->
+    <link href="images/Logo KitaBantu.png" rel="icon">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS 
+    <link rel="stylesheet" href="style.css">
+    -->
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Java Script -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .borderless {
+            border: 0 none;
+        }
+
+        #boxdonasi {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #boxdonasi:hover {
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -120px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .fade:not(.show) {
+            opacity: 1;
+        }
+
+        #icon-footer {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav id="" class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
+        <div class="container">
+            <form class="form-inline" action="">
+                <a href="index.html">
+                    <img src="images/Logo KitaBantu.png" alt="" width="50px"><img>
+                </a>
+                <input class="form-control mr-sm-2 ml-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <a class="navbar-brand" href="#">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mulaifundraising_1.html">Buat Kampanye</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="form.html">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="category.html">Donasi Sekarang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="explore1" class="container-fluid" style="padding:100px">
+        <a href="category.html"> <button type="button" class="btn btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z">
+                    </path>
+                    <path fill-rule="evenodd"
+                        d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z">
+                    </path>
+                </svg>
+                Kembali
+            </button>
+        </a>
+        <h1 class="pt-3 mb-0 btn-group-sm">Dapatkan Bantuan Dalam Biaya Kemanusiaan</h1>
+        <p class="display-4">Dengan KitaBantu, Kalian dapat mendapatkan bantuan biaya kemanusiaan dengan mudah. </p>
+        <a href="mulaifundraising_1.html">
+            <div class="btn btn-success btn-lg">Galang Dana</div>
+        </a>
+    </div>
+
+    <div id="explore2" class="container-fluid" style="padding-top:50px;padding-bottom:50px; background-color: #fbf8f6;">
+        <class class="row" style="padding-left: 100px; padding-right: 100px;">
+            <h2>Trending in medical fundraising</h2>
+            <div class="card-deck pt-3 ">
+                <div class="card bg-light text-dark" id="boxdonasi">
+                    <img class="card-img-top" src="images/image 1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="h6 text-truncate  text-success font-weight-bold">Surabaya, Jawa Timur</p>
+                        <p class="h5 text-truncate font-weight-bold">Infaq Anak Yatim
+                            Kebahagiaan Untuk Anak</p>
+                        <p class="text-truncate">Sebagian Besar kita sangatlah beruntung masih bisa mendapatkan
+                            perhatian</p>
+                        <p class="text-secondary mb-2"> Last donation 1 jam yang lalu</p>
+                        <div class="progress mb-2" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="font-weight-bold h5">Rp 10.000.000</span> <span class="p">
+                            dari Rp 20.000.000
+                        </span>
+                        <a href="content.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card bg-light text-dark" id="boxdonasi">
+                    <img class="card-img-top" src="images/image 1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="h6 text-truncate  text-success font-weight-bold">Surabaya, Jawa Timur</p>
+                        <p class="h5 text-truncate font-weight-bold">Infaq Anak Yatim
+                            Kebahagiaan Untuk Anak</p>
+                        <p class="text-truncate">Sebagian Besar kita sangatlah beruntung masih bisa mendapatkan
+                            perhatian</p>
+                        <p class="text-secondary mb-2"> Last donation 1 jam yang lalu</p>
+                        <div class="progress mb-2" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="font-weight-bold h5">Rp 10.000.000</span> <span class="p">
+                            dari Rp 20.000.000
+                        </span>
+                        <a href="content.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card bg-light text-dark" id="boxdonasi">
+                    <img class="card-img-top" src="images/image 1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="h6 text-truncate  text-success font-weight-bold">Surabaya, Jawa Timur</p>
+                        <p class="h5 text-truncate font-weight-bold">Infaq Anak Yatim
+                            Kebahagiaan Untuk Anak</p>
+                        <p class="text-truncate">Sebagian Besar kita sangatlah beruntung masih bisa mendapatkan
+                            perhatian</p>
+                        <p class="text-secondary mb-2"> Last donation 1 jam yang lalu</p>
+                        <div class="progress mb-2" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="font-weight-bold h5">Rp 10.000.000</span> <span class="p">
+                            dari Rp 20.000.000
+                        </span>
+                        <a href="content.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck pt-3">
+                <div class="card bg-light text-dark" id="boxdonasi">
+                    <img class="card-img-top" src="images/image 1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="h6 text-truncate  text-success font-weight-bold">Surabaya, Jawa Timur</p>
+                        <p class="h5 text-truncate font-weight-bold">Infaq Anak Yatim
+                            Kebahagiaan Untuk Anak</p>
+                        <p class="text-truncate">Sebagian Besar kita sangatlah beruntung masih bisa mendapatkan
+                            perhatian</p>
+                        <p class="text-secondary mb-2"> Last donation 1 jam yang lalu</p>
+                        <div class="progress mb-2" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="font-weight-bold h5">Rp 10.000.000</span> <span class="p">
+                            dari Rp 20.000.000
+                        </span>
+                        <a href="content.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card bg-light text-dark" id="boxdonasi">
+                    <img class="card-img-top" src="images/image 1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="h6 text-truncate  text-success font-weight-bold">Surabaya, Jawa Timur</p>
+                        <p class="h5 text-truncate font-weight-bold">Infaq Anak Yatim
+                            Kebahagiaan Untuk Anak</p>
+                        <p class="text-truncate">Sebagian Besar kita sangatlah beruntung masih bisa mendapatkan
+                            perhatian</p>
+                        <p class="text-secondary mb-2"> Last donation 1 jam yang lalu</p>
+                        <div class="progress mb-2" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="font-weight-bold h5">Rp 10.000.000</span> <span class="p">
+                            dari Rp 20.000.000
+                        </span>
+                        <a href="content.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card bg-light text-dark" id="boxdonasi">
+                    <img class="card-img-top" src="images/image 1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="h6 text-truncate  text-success font-weight-bold">Surabaya, Jawa Timur</p>
+                        <p class="h5 text-truncate font-weight-bold">Infaq Anak Yatim
+                            Kebahagiaan Untuk Anak</p>
+                        <p class="text-truncate">Sebagian Besar kita sangatlah beruntung masih bisa mendapatkan
+                            perhatian</p>
+                        <p class="text-secondary mb-2"> Last donation 1 jam yang lalu</p>
+                        <div class="progress mb-2" style="height: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="font-weight-bold h5">Rp 10.000.000</span> <span class="p">
+                            dari Rp 20.000.000
+                        </span>
+                        <a href="content.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </class>
+        <div style="margin: 0px 100px 0px 100px;">
+            <hr class="mt-2">
+            <p class="text-right text-secondary"> Kategori Lain <i class="bi bi-chevron-right"></i>
+            </p>
+        </div>
+    </div>
+
+    <div id="explore2" class="container-fluid bg-white" style="padding: 50px 100px 50px 100px;">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="row">
+                    <div class="col-sm-5 pt-5 pb-5">
+                        <b class="text-secondary">MEET A CUSTOMER CARE SPECIALIST</b>
+                        <h3 class="font-weight-bold mt-2">Leah</h3>
+                        <p class="text-secondary pr-5">"Leah was wonderful!! She not only answered my question, and
+                            pushed my withdrawal through, she expressed concern about my dog, who’s surgery I am raising
+                            money for. What a sweet young lady."
+                            <br><br>
+                            James - Buffalo, New York
+                        </p>
+                    </div>
+                    <div class="col-sm-7">
+                        <img class="float-right" src="images/agentLeah.jpg" alt="" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <img class="float-left" src="images/agentJenna.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-sm-5 pt-5 pb-5">
+                        <b class="text-secondary">MEET A CUSTOMER CARE SPECIALIST</b>
+                        <h3 class="font-weight-bold mt-2">Jenna</h3>
+                        <p class="text-secondary pr-5">"I had the help of Jenna in a very shattered moment in my life,
+                            the compassion and kindness went above and beyond. I needed that! Thank you!"
+                            <br><br>
+                            Theresa - Belen, New Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="text-center h4">
+                <hr class="mt-5 mb-5">
+                <p>Our Customer Care team is ready to answer your questions.</p>
+                <button type="button" class="btn btn-outline-success btn-lg font-weight-bold">Contact
+                    Us</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="content2" class="container-fluid" style="padding:60px; background-color: #fbf8f6;">
+        <h2 class="text-center">Pemimpin Penggalangan Dana Online</h2>
+        <div class="row" style="padding: 50px 100px 50px 100px;">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-shield-check text-success" viewBox="0 0 16 16">
+                            <path
+                                d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                            <path
+                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>Jaminan Perlindungan Donor</h5>
+                        <p class="text-secondary">GoFundMe has the first and only donor guarantee in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-clock-history text-success" viewBox="0 0 16 16">
+                            <path
+                                d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                            <path
+                                d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>Simple setup</h5>
+                        <p class="text-secondary">You can personalize and share your GoFundMe in just a few minutes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-envelope-heart text-success" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>Secure</h5>
+                        <p class="text-secondary">Our Trust & Safety team works around the clock to protect against
+                            fraud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding: 0px 100px 50px 100px;">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-phone text-success" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>Akses Mudah</h5>
+                        <p class="text-secondary">GoFundMe has the first and only donor guarantee in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-graph-up-arrow text-success" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>Social reach</h5>
+                        <p class="text-secondary">Harness the power of social media to spread your story and get more
+                            support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-person-workspace text-success" viewBox="0 0 16 16">
+                            <path
+                                d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                            <path
+                                d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>Expert advice</h5>
+                        <p class="text-secondary">Our best-in-class Customer Care Specialists will answer your
+                            questions, day or night.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section7" class="container-fluid bg-white  border-top border-dark"
+        style="padding-top:30px;padding-bottom:30px">
+        <div class="row">
+            <div class="col-sm-8 pl-5">
+                <ul class="list-group list-group-horizontal font-weight-bold">
+                    <li class="list-group-item borderless">Terms</li>
+                    <li class="list-group-item borderless">Privacy</li>
+                    <li class="list-group-item borderless">Legal</li>
+                    <li class="list-group-item borderless">Accessibility Statement</li>
+                </ul>
+                <p class="pl-3">Copyright &#169 2023-2023 KitaBantu. All Right Reserved</p>
+            </div>
+            <div class="col-sm-4 pr-5 text-right">
+                <img id="icon-footer" src="icons/fe_youtube.png" alt="">
+                <img id="icon-footer" src="icons/ic_baseline-tiktok.png" alt="">
+                <img id="icon-footer" src="icons/basil_instagram-solid.png" alt="">
+                <img id="icon-footer" src="icons/carbon_logo-facebook.png" alt="">
+                <img id="icon-footer" src="icons/uim_twitter-alt.png" alt="">
+                <p class="pt-2">
+                    <img src="images/img-play-store-v2 1.png" alt="">
+                    <img src="images/img-app-store-v2 1.png" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>

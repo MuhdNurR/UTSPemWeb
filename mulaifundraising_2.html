@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<title>Mulai Penggalangan Dana Anda</title>
+</head>
+
+<style type="text/css">
+	html,
+	body {
+		height: 100%;
+	}
+
+	#bg {
+		height: 100%;
+		background: lightgray;
+	}
+
+	.form-rounded {
+		border-radius: 0.75rem;
+	}
+
+	.btn-rounded {
+		border-radius: 1rem;
+	}
+
+	#tes {}
+</style>
+
+<body>
+	<div class="container-fluid h-100">
+		<div class="row justify-content-center h-100">
+			<div class="col-4 d-flex justify-content-center align-items-center " id="bg">
+				<div class="row">
+					<h2 class="m-3">Beritahu kami lebih banyak tentang penggalangan anda</h2><br>
+					<div class="col">
+						<p><small>Informasi ini membantu kami dalam memenuhi kebutuhan penggalangan anda</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-8 d-flex justify-content-center align-items-center">
+				<div class="row" style="padding-left: 100px;">
+					<div class="col">
+						<h4><strong>Siapa target penggalangan dana anda?</strong></h4>
+					</div>
+					<div class="w-100"></div>
+					<div class="col">
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col">
+									<div class="row border-dark border mr-3 cardanu" onclick="changeClass(this)"
+										style="border-width: 1px !important; border-radius: 20px; padding-bottom: 20px;">
+										<div class="col-sm-8 pl-3 mt-3 mb-3">
+											<p class="font-weight-bold" id="tes">
+												Diri Anda <br><small class="font-weight-light">Hasil Penggalangan akan
+													langsung dikirimkan ke rekening anda</small>
+												<a href="#" class="stretched-link">
+												</a>
+											</p>
+										</div>
+										<div class="col-sm-4 text-right">
+											<img src="images/yourself.png" style="width: 50%;">
+										</div>
+									</div>
+									<div class="row border-dark border mr-3 mt-4 cardanu" onclick="changeClass(this)"
+										style="border-width: 1px !important; border-radius: 20px; padding-bottom: 20px;">
+										<div class="col-sm-8 pl-3 mt-3 mb-3">
+											<p class="font-weight-bold">
+												Orang Lain <br><small class="font-weight-light">Anda akan mengundang
+													penerima untuk menerima dana atau mendistribusikannya
+													sendiri</small>
+												<a href="#" class="stretched-link"></a>
+											</p>
+										</div>
+										<div class="col-sm-4 text-right">
+											<img src="images/someone.png" style="width: 50%;">
+										</div>
+									</div>
+									<div class="row border-dark border mr-3 mt-4 cardanu" onclick="changeClass(this)"
+										style="border-width: 1px !important; border-radius: 20px; padding-bottom: 20px;">
+										<div class="col-sm-8 pl-3 mt-3 mb-3">
+											<p class="font-weight-bold">
+												Charity <br><small class="font-weight-light">Dana akan dikirimkan ke
+													pada lembaga nonprofit</small>
+												<a href="#" class="stretched-link"></a>
+											</p>
+										</div>
+										<div class="col-sm-4 text-right">
+											<img src="images/char.png" style="width: 50%;">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col text-left mt-3">
+											<a class="btn border-dark border" style="border-radius:15px"
+												href="mulaifundraising_1.html" role="button" aria-pressed="true">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+													<path fill-rule="evenodd"
+														d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+												</svg>
+											</a>
+										</div>
+										<div class="col text-right mr-3">
+											<a class="btn btn-success mt-3" href="mulaifundraising_3.html" role="button"
+												aria-pressed="true">Continue</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="javascript.js"></script>
+</body>
+
+</html>

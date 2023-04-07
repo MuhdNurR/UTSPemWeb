@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="images/Logo KitaBantu.png" rel="icon">
+	<title>Kita Bantu</title>
+	<style type="text/css">
+		.form-rounded {
+			border-radius: 0.75rem;
+			height: 65px;
+		}
+
+		#icon-footer {
+			margin-right: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container h-100 bg-light mt-5 w-50 border p-5" style="border-radius: 15px;">
+		<a href="category.html"> <button type="button" class="btn btn-success">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z">
+					</path>
+					<path fill-rule="evenodd"
+						d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z">
+					</path>
+				</svg>
+				Kembali
+			</button>
+		</a>
+
+		<div class="row mt-4">
+			<div class="col-md-5">
+				<img src="images/Screenshot 2023-03-28 232119.png" alt="" style="width: 100%;">
+			</div>
+			<div class="col-md-6">
+				<p>Anda Membantu <b>Infaq Anak Yatim Kebahagiaan Untuk Anak</b></p>
+				<p class="text-secondary">Donasi anda bermanfaat bagi <b>Yayasan Nurul Fahmi</b></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+					<div class="row">
+						<div id="" class="container-fluid bg-light" style="padding-top:10px;padding-bottom:10px">
+							<b>Masukkan Jumlah Donasi Anda</b>
+							<div class="container pt-2">
+								<div class="row border-dark border"
+									style="border-width: 2px !important; border-radius: 15px;padding: 0.5rem 0.75rem;">
+									<div class="col-sm-2 text-left">
+										<span style="display: block !important; font-weight: bold;">Rp</span>
+										<span style="display: block !important; font-weight: bold;">IDR</span>
+									</div>
+									<div class="col-sm-8 pr-0 ">
+										<input type="text" name="" id="input-text" class="bg-light"
+											style="border: none; width: 100%; font-size: 2rem; text-align: right; font-weight: bold; outline: none;"
+											inputmode="numeric" maxlength="8" class="pr-0">
+									</div>
+									<div class="col-sm-2 pl-0" style="width: 100%; font-size: 2rem;font-weight: bold;">
+										<span>,00</span>
+									</div>
+								</div>
+							</div>
+							<div class="alert alert-danger mt-3" role="alert" style="display: none;">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+									<path
+										d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+								</svg> Batas Donasi Sebesar Rp 50.000.000
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid text-center">
+			<b class="text-secondary mr-1">0% </b><input id="input-range" type="range" min="0" max="5" step="1"
+				value="3" style="width: 85%;" onchange="checkInput()"><b class="text-secondary ml-1"> 30%</b>
+
+
+		</div>
+		<div class="row ml-1">
+			<p><strong>Donasi Anda</strong><br></p>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p>Your Donation</p>
+			</div>
+			<div class="col">
+				<span id="output-text">0</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p>Your Contributon To KitaBantu</p>
+			</div>
+			<div class="col">
+				<span id="contribution-text">0</span>
+			</div>
+		</div>
+		<div class="row font-weight-bold mt-3">
+			<div class="col">
+				Total Donasi
+			</div>
+			<div class="col">
+				Rp150000
+			</div>
+		</div>
+		<a href="index.html"><button class="btn btn-success w-100 my-3">Continue Payment</button></a>
+		<p class="text-secondary">By continuing, you agree with GoFundMe terms and privacy notice. <br><br>
+			Certified Charity donations are made to PayPal Giving Fund, minus processing fees and granted subject to its
+			terms within 90 days, since the charity has not enrolled with PayPal Giving Fund and has not reviewed or
+			approved this campaign. In the unlikely event that there is a problem funding your chosen charity, PayPal
+			Giving Fund will contact you before reassigning the funds. Your donation is typically tax deductible in the
+			US.
+		</p>
+	</div>
+
+	<script src="javascript.js"></script>
+	<script src="js/jquery-3.6.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+</body>
+
+</html>
